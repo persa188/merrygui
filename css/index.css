@@ -50,6 +50,26 @@ body {
   /* margin-top: 10vh; */
 }
 
+.side-nav-items .first-level {
+  list-style-type: none;
+}
+.side-nav-items .first-level-head {
+  font-weight: bold;
+}
+.side-nav-items .submenu {
+  width: 100%;
+  display: none;
+  list-style-type: none;
+}
+
+.side-nav-items .visible {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  -webkit-padding-start: 10px
+}
 h1 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 24px;
@@ -119,7 +139,7 @@ pre {
   bottom: 1.5vh;
 }
 
-.b-left:hover,.b-right:hover {
+.b-left:hover .b-right:hover {
   color: #FFF;
 }
 
