@@ -1,48 +1,196 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8"/>
-  <title>CLN</title>
-  <link href="css/index.css" rel="stylesheet" type="text/css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
-</head>
-<body>
-  <!-- top nav -->
-  <div class="top-nav-custom">
-    <i id="snt" class="fa fa-bars nav-toggler" style="font-size:24px"></i>
-    <div>
-      <h1>
-        <span class="bl"> Career </span>
-        <span class="wh"> Learning </span>
-        <span class="bl">Network</span>
-      </h1>
-    </div>
-    <div class="nav-dropdown">
-      <i id="options" class="fa fa-sort-down si" style="font-size:24px"></i>
-      <div class="nav-dropdown-content">
-        <p><i class="fa fa-gears" style="font-size:20px; padding-right:10px;"></i> settings<p>
-        <p><i class="fa fa-power-off" style="font-size:20px; padding-right:10px;"></i> Logout </p>
-      </div>
-    </div>
-  </div>
-  <script src="js/index.js"></script>
 
-  <!-- side nav -->
-  <div id="sn" class="side-nav-custom">
-    <div class="side-nav-items">
-      <ul>
-        <li> som1 impl.</li>
-      </ul>
-    </div>
-  </div>
 
-  <!-- dasboard -->
-  <div id="mc" class="container nav-visible">
-    <h1> Welcome Student! </h1>
-  </div>
-  <!--
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  -->
-</body>
+<!DOCTYPE HTML>
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>CLN Redesign - Proto.io</title>
+
+		
+			<meta name="HandheldFriendly" content="True">
+			<meta name="MobileOptimized" content="1280"> 
+
+			
+			
+			<meta name="viewport" content="width=device-width, minimum-scale=1.00, maximum-scale=1.00, initial-scale=1.00, user-scalable=no, target-densitydpi=device-dpi, shrink-to-fit=no, viewport-fit=cover" />
+
+			
+
+			<meta name="format-detection" content="telephone=no">
+
+
+			
+
+			<link rel="shortcut icon" href="apple-touch-icon.png">
+
+			
+
+			<meta http-equiv="cleartype" content="on"> 
+
+
+			
+				<link rel="stylesheet" href="./stylesheets/player-engine-export-min.css" />
+				<script type="text/javascript" src="./scripts/player-engine-export-min.js"></script>
+			
+
+			
+			<script type="text/javascript" src="./libraries/common/components.js"></script> 
+			<link type="text/css" rel="Stylesheet" href="./libraries/common/components.1.00.css" /> 
+
+			
+					<script type="text/javascript" src="./libraries/applewatch/components.js"></script> 
+					<link type="text/css" rel="Stylesheet" href="./libraries/applewatch/components.1.00.css" /> 
+				
+					<script type="text/javascript" src="./libraries/metro/components.js"></script> 
+					<link type="text/css" rel="Stylesheet" href="./libraries/metro/components.1.00.css" /> 
+				
+					<script type="text/javascript" src="./libraries/ios7/components.js"></script> 
+					<link type="text/css" rel="Stylesheet" href="./libraries/ios7/components.1.00.css" /> 
+				
+					<script type="text/javascript" src="./libraries/material/components.js"></script> 
+					<link type="text/css" rel="Stylesheet" href="./libraries/material/components.1.00.css" /> 
+				
+				<script type="text/javascript" src="./data/data.js"></script> 
+			
+			    <script type="text/javascript" src="./scripts/plugins/bodymovin/bodymovin.min.js"></script> 
+			     <script type="text/javascript" src="./bodymovin/bodymovinAnimations.js"></script> 
+
+		<style>
+			body { width: 1280px; height: 768px; }
+			.landscape, .landscape .prx-page { min-height: 1280px; }
+			.portrait, .portrait .prx-page { min-height: 768px; }
+		</style>
+
+		<script type="text/javascript">
+
+			prx.url.account = 'https://vioey8le.proto.io';
+			prx.url.staticassets = 'https://gal.proto.io';
+			prx.url.devices = 'https://dteyv52hbg2at.cloudfront.net/devices';
+			prx.url.static = 'https://dteyv52hbg2at.cloudfront.net';
+			prx.url.siteurl = 'proto.io';
+			prx.url.crossmsg = 'https://vioey8le.proto.io';
+
+			prx.nodejsassetsserver = {};
+			prx.nodejsassetsserver.host = ".proto.io";
+			prx.nodejsassetsserver.subdomainprefix = "https://at";
+			prx.nodejsassetsserver.maxsubdomains = "20";
+
+			prx.device_library = 'common';
+			prx.devices[prx.device] = {
+				name: prx.device
+				,defaultOrientation: 'landscape'
+				,portrait_applies: 0 //new
+				,portrait: [0,0]
+				,landscape_applies: 1 //new
+				,landscape: [1280,768]
+				,allow_orientation_change: 1 //new
+				,statusbar_skin: 'default' // new
+				,statusbarheightportrait: 0
+				,statusbarheightlandscape: 0
+				,navigationbar_skin: 'default' //new
+				,navigationbarheightportrait: 0
+				,navigationbarheightlandscape: 0
+				,normalportrait: [0,0]
+				,normallandscape: [1280,768]
+				,device_s3bucket: '2ba59787-3a2b-426f-aa2e-e60174052e65'
+				,dpr: '1.00'
+				,deviceType: "default"
+				,showiPhoneXNotch: false
+				,scrollType: "default"
+				,initialscale: 1.00
+				,targetdensitydpi: "device-dpi"
+			}
+
+			prx.projectsettings.id = 'a3cf07aa-6bc0-4286-a910-82ef11101474';
+			prx.projectsettings.s3b = 'vioey8le-614732-proto';
+			prx.projectsettings.account = 'vioey8le';
+			prx.projectsettings.statusbar = '0'; 
+			prx.projectsettings.statusbarapplies = '0';
+			prx.projectsettings.navigationbar = '0';
+			prx.projectsettings.navigationbarapplies = '0';
+			prx.projectsettings.initialpageid = -1;
+			
+			
+			prx.projectsettings.flashactions = 0;
+			prx.projectsettings.gatrackingcode = '';
+
+			prx.export2html = '1' == true;
+			prx.mobPlayer = 0;
+
+			prx.user.country = 'US';
+
+			prx.s3Links = []; 
+			var sLinkedAssets = [];
+			
+				sLinkedAssets["pa3cf07aa-6bc0-4286-a910-82ef11101474_5c1768b4dd8bdcb8dd3dfdf88a9d8c46.jpeg"]="http://www.powerpointhintergrund.com/uploads/2017/08/free-halftone-pop-stock-background-images--backgrounds-etc-22.jpeg";
+				
+
+			prx.csrf_token = '35D126853C3B14CBF6E44A2B67F805C599D4D2850BAEDF44BDD0C1488E0EAFF1';
+
+            
+
+            
+                            prx.assetsAccessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkIjp7InVpZCI6Ii0xIiwicHJvamVjdF9pZCI6ImEzY2YwN2FhLTZiYzAtNDI4Ni1hOTEwLTgyZWYxMTEwMTQ3NCJ9LCJ2IjowLCJleHAiOjE1MjA0NzY5NzQsImlhdCI6MTUyMDI5Njk3NH0.nts3x1KCS-puAz7xPUIPVtnt0YlKLGO_YP_AcFHEn0I";
+
+			prx.iniPlayer.iniPreLoad();
+
+
+			 
+			
+
+		</script>
+	</head>
+
+	
+			<body class="player device-cursor-web mobile-device-true" id="mbd" >
+
+				
+				<div id="window-wrapper">
+					<div id="dragarea"></div>
+					<div id="statusbar"></div>
+					<div id="underlay" style=""></div>
+
+					<div class="prx-page" data-role="page" id="p-11" data-id="11"></div>
+					
+						<div class="prx-page" data-role="page" id="p-1" data-id="1"></div>
+					
+								<div class="prx-page" data-role="page" id="p-12" data-id="12"></div>
+							
+								<div class="prx-page" data-role="page" id="p-13" data-id="13"></div>
+							
+								<div class="prx-page" data-role="page" id="p-14" data-id="14"></div>
+							
+								<div class="prx-page" data-role="page" id="p-16" data-id="16"></div>
+							
+								<div class="prx-page" data-role="page" id="p-17" data-id="17"></div>
+							
+								<div class="prx-page" data-role="page" id="p-18" data-id="18"></div>
+							
+								<div class="prx-page" data-role="page" id="p-19" data-id="19"></div>
+							
+								<div class="prx-page" data-role="page" id="p-20" data-id="20"></div>
+							
+								<div class="prx-page" data-role="page" id="p-21" data-id="21"></div>
+							
+					<div id="navigationbar"></div>
+					<div id="overlay"></div>
+					<div id="trash"></div>
+					<div id="quick-audios"></div>
+				</div>
+
+				 
+			<div id="loader-wrapper">
+				
+				<div class="progress">
+					<div class="progress-bar"></div>
+				</div>
+				<div id="poweredby"></div>
+			</div>
+			
+
+
+			</body>
+		
+
 </html>
